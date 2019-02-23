@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+select {
+width: 40%;
+padding: 5px 10px;
+margin: 5px 0;
+border: 3px solid steelblue;
+border-radius: 4px;
+background-color:yellow;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a.active {
+  background-color:darkblue;
+  color: white;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body style="background-image:url('manufacturer.jpeg');">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="mdashboard.html">DASHBOARD</a>  
+  <a class="active" href="#">INVENTORY</a>
+  <a href="maccounts.html">ACCOUNTS</a>
+  <a href="mtaxes.html">TAXES</a>
+  <a href="#">Sales Forecasting</a>
+  <a href="mdealer.html">Dealer</a>
+  <a href="mproductdemand.html">Product Demand</a>
+  <a href="mmiscellaneous.html">Miscellaneous</a>
+  <a href="mhelp.html">HELP</a>
+</div>
+
+<h2 style="color:red;font-size:40px;margin-left: 40px" title="Supply Chain Management System">SCMS</h2>
+<p style="text-align: right;font:35px;margin-right: 40px">USER <i class="fa fa-industry" aria-hidden="true"></i>
+</p>
+<hr>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<center>
+<fieldset>
+<form>
+
+<legend style="color:red;font-size:50px" >Sales Forecasting Details</legend>
+<h3>No.Of Days:
+<select name="Sales">
+  <option value="">---Select One---</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select>
+<br>
+Select Product:
+<select name="Sales">
+  <option value="">---Select One---</option>
+  <option value="Dairy Milk">Dairy Milk</option>
+  <option value="KitKat">KitKat</option>
+  <option value="Twix">Twix</option>
+  <option value="Snickers">Snickers</option>
+  <option value="Hershey Bar">Hershey Bar</option>
+  <option value="Milky Way">Milky Way</option>
+  <option value="Nestle Crunch">Nestle Crunch</option>
+  <option value="Galaxy">Galaxy</option>
+  <option value="Munch">Munch</option>
+  <option value="Perk">Perk</option>
+</select></h3>
+
+
+</form>
+<button onclick = "myFunction()" style="font-size:30px" >Go</button>
+<br><br>
+<h3 id="demo"></h3>
+</fieldset>
+<script>
+function myFunction() 
+{
+  document.getElementById("demo").innerHTML = "No. Of Dairy Milk sale in 1 day = 20pcs. ";
+}
+</script>
+</center>
+   
+</body>
+</html>
