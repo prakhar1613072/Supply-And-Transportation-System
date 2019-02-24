@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
-<title>SCMS</title>
+<title>TS</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -14,6 +14,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+.ab{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
 
 /* Style the header */
 .header {
@@ -110,52 +122,32 @@ body {
 <body>
 
 <div class="header">
-  <h1>Indian Transpotation System</h1>
-  <p>The Power Of Consumer.</p>
+  <h1>Transportation System</h1>
+  <p>Connecting India.</p>
 </div>
 
 <div class="navbar">
-  <a href="#">Dashboard</a>
-  <a href="#">List Of Invoices</a>
-  <a href="#">Set Deliver Details</a>
-  <a href="#">Generate List</a>
-  <a href="#">Payment Status</a>
+  <a class="active" href="#">Dashboard</a>
+  <a href="list_of_invoice.html">List Of Invoices</a>
+  <a href="set_delivery_details.html">Set Delivery Details</a>
+  <a href="generate_list.html">Generate List</a>
+  <a href="payment_status.html">Payment Status</a>
   
 
   <a href="#">Login <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>   
         
 </div>  
 
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<center>
+    <form>
+    <fieldset>
+    <legend style="color:red;font-size:50px;" >Dashboard</legend>
+    <a class="ab" href="#">Add New Address</a><br><br>
+    <a class="ab" href='#'>Add Transportation Cost</a><br><br>
+    <!a class="ab" href="#"><!/a>
+    </fieldset>
+    </form>
+</center>
 
 </body>
 </html>

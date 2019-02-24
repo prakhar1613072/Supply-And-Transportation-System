@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+<title>TS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;text-align:center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Transportation System</h1>
+  <p>Connecting India.</p>
+</div>
+
+<div class="navbar">
+  <a href="dtransportation.html">Dashboard</a>
+  <a href="list_of_invoice.html">List Of Invoices</a>
+  <a href="set_delivery_details.html">Set Delivery Details</a>
+  <a class="active" href="#">Generate List</a>
+  <a href="payment_status.html">Payment Status</a>
+  
+
+  <a href="#">Login <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>   
+        
+</div>
+
+<table style="width:100%">
+  <tr>
+	<th>Date</th>
+    <th>Customer Name</th>
+	<th>Mobile Number</th>
+    <th>GSTIN</th>
+	<th>Number of Cartons</th>
+	<th>Pickup Address</th>
+	<th>Delivery Address</th>
+    <th>Route Number</th>
+	<th>Priority</th>
+  </tr>
+  <tr>
+	<td>24-02-2019</td>
+    <td>Pratyush</td>
+	<td>9717560154</td>
+    <td>123456789 RT 0002</td>
+	<td>2</td>
+	<td></td>
+	<td></td>
+    <td>94</td>
+	<td>1</td>
+  </tr>
+  <tr>
+	<td>24-02-2019</td>
+    <td>Nimisha</td>
+	<td>795261100</td>
+    <td>123456789 RT 0003</td>
+	<td>2</td>
+	<td></td>
+	<td></td>
+    <td>80</td>
+	<td>2</td>
+  </tr>
+  <tr>
+	<td>24-02-2019</td>
+    <td>Prakhar</td>
+	<td>8005281110</td>
+    <td>123456789 RT 0001</td>
+	<td>2</td>
+	<td></td>
+	<td></td>
+    <td>50</td>
+	<td>3</td>
+  </tr>
+</table>
+
+</body>
+</html>
